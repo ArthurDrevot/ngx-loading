@@ -13,8 +13,7 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent],
-      imports: [NgxLoadingModule],
+      imports: [NgxLoadingModule, AppComponent],
     }).compileComponents();
   });
 

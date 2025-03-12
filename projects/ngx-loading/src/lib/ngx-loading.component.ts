@@ -6,6 +6,7 @@ import {
 } from './ngx-loading-config';
 import { INgxLoadingConfig } from './ngx-loading-config';
 import { NgxLoadingService } from './ngx-loading.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'ngx-loading',
@@ -239,6 +240,7 @@ import { NgxLoadingService } from './ngx-loading.service';
         -webkit-animation: load8 1.1s infinite linear;
         animation: load8 1.1s infinite linear;
       }
+
       @-webkit-keyframes load8 {
         0% {
           -webkit-transform: rotate(0deg);
@@ -249,6 +251,7 @@ import { NgxLoadingService } from './ngx-loading.service';
           transform: rotate(360deg);
         }
       }
+
       @keyframes load8 {
         0% {
           -webkit-transform: rotate(0deg);
@@ -282,6 +285,7 @@ import { NgxLoadingService } from './ngx-loading.service';
         -webkit-animation: load6 1.7s infinite ease;
         animation: load6 1.7s infinite ease;
       }
+
       @-webkit-keyframes load6 {
         0% {
           box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
@@ -317,6 +321,7 @@ import { NgxLoadingService } from './ngx-loading.service';
           -webkit-transform: rotate(360deg);
         }
       }
+
       @keyframes load6 {
         0% {
           box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
@@ -796,6 +801,7 @@ import { NgxLoadingService } from './ngx-loading.service';
         margin: auto;
         z-index: 2000;
       }
+
       .sk-circle .sk-child {
         width: 100%;
         height: 100%;
@@ -803,6 +809,7 @@ import { NgxLoadingService } from './ngx-loading.service';
         left: 0;
         top: 0;
       }
+
       .sk-circle .sk-child:before {
         content: '';
         display: block;
@@ -814,101 +821,123 @@ import { NgxLoadingService } from './ngx-loading.service';
         -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
         animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
       }
+
       .sk-circle .sk-circle2 {
         -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
         transform: rotate(30deg);
       }
+
       .sk-circle .sk-circle3 {
         -webkit-transform: rotate(60deg);
         -ms-transform: rotate(60deg);
         transform: rotate(60deg);
       }
+
       .sk-circle .sk-circle4 {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
       }
+
       .sk-circle .sk-circle5 {
         -webkit-transform: rotate(120deg);
         -ms-transform: rotate(120deg);
         transform: rotate(120deg);
       }
+
       .sk-circle .sk-circle6 {
         -webkit-transform: rotate(150deg);
         -ms-transform: rotate(150deg);
         transform: rotate(150deg);
       }
+
       .sk-circle .sk-circle7 {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
       }
+
       .sk-circle .sk-circle8 {
         -webkit-transform: rotate(210deg);
         -ms-transform: rotate(210deg);
         transform: rotate(210deg);
       }
+
       .sk-circle .sk-circle9 {
         -webkit-transform: rotate(240deg);
         -ms-transform: rotate(240deg);
         transform: rotate(240deg);
       }
+
       .sk-circle .sk-circle10 {
         -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
         transform: rotate(270deg);
       }
+
       .sk-circle .sk-circle11 {
         -webkit-transform: rotate(300deg);
         -ms-transform: rotate(300deg);
         transform: rotate(300deg);
       }
+
       .sk-circle .sk-circle12 {
         -webkit-transform: rotate(330deg);
         -ms-transform: rotate(330deg);
         transform: rotate(330deg);
       }
+
       .sk-circle .sk-circle2:before {
         -webkit-animation-delay: -1.1s;
         animation-delay: -1.1s;
       }
+
       .sk-circle .sk-circle3:before {
         -webkit-animation-delay: -1s;
         animation-delay: -1s;
       }
+
       .sk-circle .sk-circle4:before {
         -webkit-animation-delay: -0.9s;
         animation-delay: -0.9s;
       }
+
       .sk-circle .sk-circle5:before {
         -webkit-animation-delay: -0.8s;
         animation-delay: -0.8s;
       }
+
       .sk-circle .sk-circle6:before {
         -webkit-animation-delay: -0.7s;
         animation-delay: -0.7s;
       }
+
       .sk-circle .sk-circle7:before {
         -webkit-animation-delay: -0.6s;
         animation-delay: -0.6s;
       }
+
       .sk-circle .sk-circle8:before {
         -webkit-animation-delay: -0.5s;
         animation-delay: -0.5s;
       }
+
       .sk-circle .sk-circle9:before {
         -webkit-animation-delay: -0.4s;
         animation-delay: -0.4s;
       }
+
       .sk-circle .sk-circle10:before {
         -webkit-animation-delay: -0.3s;
         animation-delay: -0.3s;
       }
+
       .sk-circle .sk-circle11:before {
         -webkit-animation-delay: -0.2s;
         animation-delay: -0.2s;
       }
+
       .sk-circle .sk-circle12:before {
         -webkit-animation-delay: -0.1s;
         animation-delay: -0.1s;
@@ -981,6 +1010,7 @@ import { NgxLoadingService } from './ngx-loading.service';
           -webkit-transform: rotate(360deg);
         }
       }
+
       @keyframes sk-rotate {
         100% {
           transform: rotate(360deg);
@@ -1016,6 +1046,7 @@ import { NgxLoadingService } from './ngx-loading.service';
       }
     `,
   ],
+  imports: [CommonModule],
 })
 export class NgxLoadingComponent implements OnInit {
   @Input() show = false;
